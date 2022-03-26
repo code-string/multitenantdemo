@@ -1,0 +1,19 @@
+spring:
+  redis:
+    port: 6379
+    host: localhost
+
+
+application:
+  tenant-key: ${TENANT_KEY}
+  service-key: ${SERVICE_KEY}
+  encryption:
+    secret: ${SECRET_KEY}
+    salt: ${SALT}
+  datasource-default:
+    alias: default
+    host: 127.0.0.1
+    port: 27017
+    database: tenant-default-db
+    username: admin
+    password: ${PASSWORD}
